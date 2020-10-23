@@ -16,8 +16,8 @@ class Bookmark
     else
       connection = PG.connect :dbname => 'bookmark_manager'
     end
-    table = connection.exec "SELECT * FROM bookmarks"  
-    table.map do |bookmark|   
+    table = connection.exec "SELECT * FROM bookmarks"
+    table.map do |bookmark|
       Bookmark.new(id: bookmark['id'], title: bookmark['title'], url: bookmark['url'])
     end
   end
@@ -31,4 +31,14 @@ class Bookmark
     result = connection.exec "INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}') RETURNING id, url, title"
     Bookmark.new(id: result[0]['id'], title: result[0]['title'], url: result[0]['url'])
   end
+
+  def self.delete(url:)
+    if ENV['RACK_ENV'] == "test"
+      connection = PG.connect :dbname => 'bookmark_manager_test'
+    else
+      connection = PG.connect :dbname => 'bookmark_manager'
+    end
+    result = connection.exec "DELETE FROM bookmarks WHERE url = '#{url}';"
+  end
+
 end

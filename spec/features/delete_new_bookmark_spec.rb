@@ -3,7 +3,7 @@ feature 'User can delete bookmarks' do
     add_bookmark
     visit('/bookmarks')
     click_button('Delete Bookmarks')
-    page.check('box_id')
+    page.choose('Makers Academy')
     click_button('Submit')
     expect(page).not_to have_link("Makers Academy")
     expect(page).to have_link("Google")

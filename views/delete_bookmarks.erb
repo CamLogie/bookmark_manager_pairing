@@ -1,7 +1,7 @@
-<form action = '/bookmarks/delete' method = post >
+<form action = '/bookmarks/delete' method = 'post' >
   <% @bookmarks.each do |bookmark| %>
     <li>
-      <input type='checkbox' id = "<%=bookmark.title%>" value="<%= bookmark.url %>">
+      <input type='radio' id = "<%=bookmark.title%>" name="url" value="<%= bookmark.url %>">
         <label for="<%=bookmark.title%>"><%= bookmark.title %></label><br>
       </a>
     </li>

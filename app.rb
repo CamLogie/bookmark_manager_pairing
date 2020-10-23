@@ -16,16 +16,17 @@ class BookmarkManager < Sinatra::Base
 
   post '/add_bookmarks' do
     Bookmark.create(url: params[:add_bookmark], title: params[:add_title])
-    redirect to('/confirm')
-  end
-
-  get '/confirm' do
-    erb :confirm
+    redirect to('/bookmarks')
   end
 
   get '/bookmarks/delete' do
     @bookmarks = Bookmark.all
     erb :delete_bookmarks
+  end
+
+  post '/bookmarks/delete' do
+    Bookmark.delete(url: params[:url])
+    redirect to('/bookmarks')
   end
 
 
