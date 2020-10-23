@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/charlesgalbraith/coding/projects/bookmark_manager_pairing/spec/bookmark_list_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/bookmark_list_spec.rb": {
         "lines": [
           1,
           null,
@@ -46,7 +46,7 @@
           null
         ]
       },
-      "/Users/charlesgalbraith/coding/projects/bookmark_manager_pairing/spec/features/add_new_bookmark_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/features/add_new_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -59,7 +59,7 @@
           null
         ]
       },
-      "/Users/charlesgalbraith/coding/projects/bookmark_manager_pairing/spec/features/delete_new_bookmark_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/features/delete_new_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -74,7 +74,7 @@
           null
         ]
       },
-      "/Users/charlesgalbraith/coding/projects/bookmark_manager_pairing/spec/features/test_infrastructure_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/features/test_infrastructure_spec.rb": {
         "lines": [
           1,
           1,
@@ -84,7 +84,18 @@
           null
         ]
       },
-      "/Users/charlesgalbraith/coding/projects/bookmark_manager_pairing/spec/features/view_bookmarks_spec.rb": {
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/features/update_bookmark_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/cameronlogie/codingprojects/makers/week_4/pairing/bookmarks_KC/spec/features/view_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -99,6 +110,6 @@
         ]
       }
     },
-    "timestamp": 1603467539
+    "timestamp": 1603469985
   }
 }

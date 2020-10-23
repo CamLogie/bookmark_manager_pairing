@@ -1,10 +1,14 @@
 <ul>
   <% @bookmarks.each do |bookmark| %>
     <li>
+      <form action = '/bookmarks/<%= bookmark.id%>' method = post>
+        <input type = 'hidden' name = '_method' value= 'PUT'>
+        <input type = 'submit' value = 'Update'>
       <a href="<%= bookmark.url %>">
         <%= bookmark.title %>
       </a>
     </li>
+    </form>
   <% end %>
 </ul>
 

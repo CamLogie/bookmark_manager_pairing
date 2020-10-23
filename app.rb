@@ -3,7 +3,7 @@ require './lib/bookmark_list'
 
 class BookmarkManager < Sinatra::Base
 
-  enable :sessions
+  enable :sessions, :method_override
 
   get '/' do
     erb :index
@@ -29,7 +29,9 @@ class BookmarkManager < Sinatra::Base
     redirect to('/bookmarks')
   end
 
-
+  put '/bookmarks/:id' do
+    # p params
+  end
 
   run! if app_file == $0
 end
